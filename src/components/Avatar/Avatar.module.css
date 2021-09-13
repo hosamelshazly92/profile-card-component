@@ -1,0 +1,8 @@
+.cardAvatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  position: absolute;
+  top: 122px;
+}
