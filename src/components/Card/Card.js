@@ -3,6 +3,7 @@ import {
   cardBackground,
   cardSection,
   cardTitle,
+  cardBody,
 } from "./Card.module.css";
 import Avatar from "../Avatar/Avatar";
 import Stat from "../Stat/Stat";
@@ -16,15 +17,17 @@ const Card = ({ data }) => {
         <img src={background} alt="card background" />
       </div>
       <Avatar info={avatar} />
-      <h2 className={cardTitle}>
-        {name} <span>{age}</span>
-      </h2>
-      <p>{city}</p>
-      <hr />
-      <div className={cardSection}>
-        <Stat info={stats.followers}>Followers</Stat>
-        <Stat info={stats.likes}>Likes</Stat>
-        <Stat info={stats.photos}>photos</Stat>
+      <div className={cardBody}>
+        <h2 className={cardTitle}>
+          {name} <span>{age}</span>
+        </h2>
+        <p>{city}</p>
+        <hr />
+        <div className={cardSection}>
+          <Stat info={stats.followers}>Followers</Stat>
+          <Stat info={stats.likes}>Likes</Stat>
+          <Stat info={stats.photos}>photos</Stat>
+        </div>
       </div>
     </div>
   );

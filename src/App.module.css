@@ -13,6 +13,10 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #19a1ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
